@@ -1,0 +1,124 @@
+.footer {
+   // .footer__content
+   &__content {
+      background-color: #dfdfdf;
+      padding: 60px 0 80px;
+   }
+   // .footer__inner
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   // .footer__info
+   &__info {
+      flex: 0 1 540px;
+   }
+   // .footer__info-title
+   &__info-title {
+      margin-bottom: 14px;
+      font-size: 16px;
+      line-height: 23px;
+      color: $title;
+   }
+   // .footer__info-text
+   &__info-text {
+      color: $default;
+      margin-bottom: 16px;
+      max-width: 475px;
+   }
+   // .footer__info-mail
+   &__info-mail {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: $title;
+      margin-bottom: 22px;
+      padding-left: 30px;
+   }
+   // .footer__form
+   &__form {
+      display: flex;
+   }
+   // .footer__form-input
+   &__form-input {
+      padding: 6px 10px 6px 18px;
+      border: 1px solid rgba($title, .7);
+      box-sizing: border-box;
+      border-radius: 21px;
+      background-color: transparent;
+      flex: 0 1 388px;
+      &::placeholder {
+         color: #A1A1A1;
+         font-size: 16px;
+         line-height: 28px;
+      }
+   }
+   // .footer__form-send
+   &__form-send {
+      border: none;
+      font-weight: 600;
+      line-height: 28px;
+      text-align: center;
+      color: $white;
+      background: $title;
+      border-radius: 21px;
+      flex: 0 1 160px;
+      margin-left: 9px;
+      cursor: pointer;
+   }
+   &__social, &__menu {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: $footer-link;
+   }
+
+   // .footer__social
+   &__social {
+      flex: 0 1 110px;
+   }
+   // .footer__social-list
+   &__social-list {
+   }
+   // .footer__social-item
+   &__social-item {
+      margin-bottom: 15px;
+      cursor: pointer;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   // .footer__item-link
+   &__item-link {
+   }
+   // .footer__menu
+   &__menu {
+      flex: 0 1 125px;
+      margin-right: 60px;
+      
+   }
+   // .footer__menu-list
+   &__menu-list {
+   }
+   // .footer__menu-item
+   &__menu-item {
+      margin-bottom: 15px;
+      cursor: pointer;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   // .footer__menu-link
+   &__menu-link {
+   }
+   // .footer__copyright
+   &__copyright {
+      padding: 42px 0 41px;
+      background-color: $black;
+      text-align: center;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      color: #A1A1A1;
+   }
+}
