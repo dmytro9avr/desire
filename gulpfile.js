@@ -44,7 +44,8 @@ function images() {
 // (соеденяет и минимизирует JS)
 function scripts() {
    return src([
-         // 'node_modules/jquery/dist/jquery.js',
+         'node_modules/jquery/dist/jquery.js',
+         'node_modules/slick-carousel/slick/slick.js',
          // 'app/js/slick.js',
          // 'app/js/.......',
          // 'app/js/.......',
