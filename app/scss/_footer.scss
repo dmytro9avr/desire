@@ -92,72 +92,53 @@
    &__social-item {
       margin-bottom: 15px;
       cursor: pointer;
+      position: relative;
+       &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            background-repeat: no-repeat;
+       }
+
       &:last-child {
          margin-bottom: 0;
       }
       &:nth-child(1) {
-         position: relative;
          &::before {
-            content: '';
-            position: absolute;
             background-image: url('../img/footer/facebook.svg');
-            left: 0;
-            top: 6px;
             width: 16px;
             height: 18px;
-            background-repeat: no-repeat;
          }
       }
       &:nth-child(2) {
-         position: relative;
          &::before {
-            content: '';
-            position: absolute;
             background-image: url('../img/footer/instagram.svg');
-            left: 0;
-            top: 6px;
             width: 14px;
             height: 18px;
-            background-repeat: no-repeat;
          }
       }
       &:nth-child(3) {
-         position: relative;
          &::before {
-            content: '';
-            position: absolute;
             background-image: url('../img/footer/Pinterest.svg');
-            left: 0;
-            top: 6px;
             width: 16px;
             height: 18px;
-            background-repeat: no-repeat;
          }
       }
       &:nth-child(4) {
-         position: relative;
          &::before {
-            content: '';
-            position: absolute;
             background-image: url('../img/footer/whatsapp.svg');
-            left: 0;
-            top: 6px;
             width: 16px;
             height: 18px;
-            background-repeat: no-repeat;
          }
       }
       &:nth-child(5) {
-         position: relative;
          &::before {
-            content: '';
-            position: absolute;
             background-image: url('../img/footer/youtube.svg');
             left: 0;
             top: 7px;
             width: 24px;
             height: 18px;
-            background-repeat: no-repeat;
          }
       }
 

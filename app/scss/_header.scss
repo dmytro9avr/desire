@@ -38,3 +38,75 @@
       cursor: pointer;
    }
 }
+
+.rightside-menu {
+   box-shadow: -2px -1px 20px 0px #000;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   right: 0;
+   // bottom: 0;
+   width: 100%;
+   max-width: 694px;
+   background-color: #fff;
+   padding-top: 40px;
+   transition: all .5s;
+   // for closed the side menu
+   &.rightside-menu--close {
+      transform: translateX(1000%);
+      
+
+
+   }
+   // .rightside-menu__close
+   &__close {
+      background: transparent;
+      border: none;
+      margin-bottom: 30px;
+      padding: 0;
+      margin-left: 50px;
+      margin-bottom: 60px;
+   }
+   // .rightside-menu__content
+   &__content {
+      text-align: center;
+      min-width: 485px;
+      margin: 0 auto;
+   }
+
+   &__logo {
+      display: inline-block;
+      margin-bottom: 40px;
+   }
+   // .rightside-menu__title
+   &__title {
+      @extend %title-font;
+      color: $title;
+      font-size: 36px;
+      line-height: 51px;
+      text-align: center;
+      &::after {
+         margin: 15px auto 17px;
+         display: block;
+         text-align: center;
+         content: '';
+         width: 252px;
+         border-bottom: 1px solid $line;
+      }
+
+
+   }
+   // .rightside-menu__text
+   &__text {
+      margin: auto;
+      text-align: center;
+      color: $default;
+      margin-bottom: 71px;
+      max-width: 485px;
+   }
+   // .rightside-menu__img
+   &__img {
+      min-width: 485px;
+      margin: 0 auto;
+   }
+}
