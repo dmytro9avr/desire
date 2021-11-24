@@ -5,9 +5,9 @@ body {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-   font-size: 16px;
-   line-height: 27px;
-   font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
 	color: $default;
 	overflow-x: hidden;
 	min-width: 320px;
@@ -22,17 +22,13 @@ body {
 .main {
 	flex: 1 0 auto;
 }
+
 .footer {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-
-
-
-
-

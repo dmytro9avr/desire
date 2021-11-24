@@ -1,4 +1,5 @@
 .header {
+
    // .header__inner
    &__inner {
       display: flex;
@@ -6,6 +7,7 @@
       align-items: center;
       height: 120px;
    }
+
    // .header__btn
    &__btn {
       background-color: transparent;
@@ -14,22 +16,26 @@
       cursor: pointer;
    }
 }
+
 .menu {
    padding-right: 15px;
+
    // .menu__list
    &__list {
       display: flex;
       justify-content: space-between;
       align-items: center;
    }
+
    // .menu__list-item
    &__list-item {
       padding-right: 45px;
       padding-left: 35px;
    }
-            // &__list-item + .menu__list-item {
-            //    padding-left: 80px;
-            // }
+
+   // &__list-item + .menu__list-item {
+   //    padding-left: 80px;
+   // }
    // .menu__list-link
    &__list-link {
       @extend %title-font;
@@ -51,13 +57,15 @@
    background-color: #fff;
    padding-top: 40px;
    transition: all .5s;
+
    // for closed the side menu
    &.rightside-menu--close {
       transform: translateX(1000%);
-      
+
 
 
    }
+
    // .rightside-menu__close
    &__close {
       background: transparent;
@@ -67,6 +75,7 @@
       margin-left: 50px;
       margin-bottom: 60px;
    }
+
    // .rightside-menu__content
    &__content {
       text-align: center;
@@ -78,6 +87,7 @@
       display: inline-block;
       margin-bottom: 40px;
    }
+
    // .rightside-menu__title
    &__title {
       @extend %title-font;
@@ -85,6 +95,7 @@
       font-size: 36px;
       line-height: 51px;
       text-align: center;
+
       &::after {
          margin: 15px auto 17px;
          display: block;
@@ -96,6 +107,7 @@
 
 
    }
+
    // .rightside-menu__text
    &__text {
       margin: auto;
@@ -104,6 +116,7 @@
       margin-bottom: 71px;
       max-width: 485px;
    }
+
    // .rightside-menu__img
    &__img {
       min-width: 485px;
