@@ -3,6 +3,7 @@
    padding: 45px 0 105px;
    // .new-collection__title
    &__title {
+      @extend %title-font;
       color: $title;
       font-size: 36px;
       line-height: 51px;
@@ -89,5 +90,79 @@
       font-weight: 600;
       font-size: 14px;
       color: #707070;
+   }
+}
+
+
+
+.decor {
+   padding: 172px 0 155px;
+   background: url('../img/decore-bg.jpg') no-repeat;
+   background-size: cover;
+   min-height: 600px;
+   
+   // .decore__title
+   &__title {
+   @extend %title-font;
+   max-width: 730px;
+   color: $title;
+   font-size: 60px;
+   line-height: 80px;
+   padding-bottom: 22px;
+   margin-bottom: 22px;
+   position: relative;
+   &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 200px;
+      background-color: #6d7278;
+   }
+   }
+   // .decore__text
+   &__text {
+      max-width: 540px;
+   }
+}
+
+.works-path {
+   padding: 80px 0 30px;
+   // .works-path__title
+   &__title {
+      @extend %title-font;
+      text-align: center;
+      color: $title;
+      margin-bottom: 40px;
+      font-size: 36px;
+      line-height: 51px;
+   }
+   // .works-path__items
+   &__items {
+   }
+   &__items-box {
+      display: flex;
+   }
+   // .work-path__item
+   &__item {
+      width: 250px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+   }
+   // .work-path__item-img
+   &__item-img {
+   }
+   // .work-path__item-title
+   &__item-title {
+      @extend %title-font;
+      margin-left: 13px;
+      color: $title;
+
+   }
+   // .work-path__item-text
+   &__item-text {
+      margin-top: 13px;
    }
 }
