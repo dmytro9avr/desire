@@ -169,14 +169,17 @@
 
    &__item--production {
       margin-left: 317px;
+      position: relative;
       &::after {
          content: '';
+         position: absolute;
          bottom: 0;
          left: 0;
          height: 20px;
          width: 2px;
          background: rgba($title, .7);
       }
+
    }
    &__item--consultation {
    }
@@ -187,6 +190,7 @@
       position: relative;
       &::before {
          content: '';
+         position: absolute;
          top: 0;
          left: 0;
          height: 20px;
