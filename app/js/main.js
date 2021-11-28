@@ -15,4 +15,16 @@ $(function () {
     autoplay: true
  });
 
+
+ var mixer = mixitup('.gallery__inner', {
+   load: {
+      filter: '.bedroom'
+  }
+ }); 
+
+   $('[data-fancybox="gallery"]').fancybox({
+      // Options will go here
+   });
+
+
 })

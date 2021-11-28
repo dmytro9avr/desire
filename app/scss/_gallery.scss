@@ -1,0 +1,122 @@
+.gallery {
+   padding: 80px 0 90px;
+   // .gallery__buttons
+   &__buttons {
+      text-align: center;
+      margin-bottom: 40px;
+   }
+   // .gallery__btn
+   &__btn {
+      cursor: pointer;
+      margin: 0 13px;
+      background-color: transparent;
+      border: 1px solid #454674;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center;
+      color: #8F8D8D;
+      &:active {
+         color: #363838;
+         background-color: #FFEF35;
+         border: none;
+      }
+   }
+   .mixitup-control-active {
+      color: #363838;
+      background-color: #FFEF35;
+      border: none;
+   }
+   // .gallery__inner
+   &__inner {
+   }
+   // .gallery__items
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr );
+      grid-gap: 30px 35px;
+   }
+   
+   // .gallery__item-link
+   &__item-link {
+      &:first-child {
+         grid-column: span 2;
+         grid-row: span 2;
+      }
+   }
+   // .gallery__item-img
+   &__item-img {
+      object-fit: cover;
+      height: 100%;
+      max-height: 1150px;
+   }
+}
+
+
+.blog-box {
+   padding-bottom: 100px;
+   // .blog-box__title
+   &__title {
+      @extend %title-font;
+      color: $title;
+      font-size: 36px;
+      line-height: 51px;
+      text-align: center;
+      margin: 0 auto 30px;
+      max-width: 430px;
+   }
+   // .blog-box__items
+   &__items {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+   }
+   // .blog-box__item
+   &__item {
+   }
+   // .blog-box__img-link
+   &__img-link {
+      cursor: pointer;
+      margin-bottom: 19px;
+      display: inline-block;
+   }
+   // .blog-box__img
+   &__img {
+      max-width: 540px;
+   }
+   // .blog-box__post-img
+   &__post-img {
+   }
+   // .blog-box__links
+   &__links {
+      margin-bottom: 7px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #707070;
+   }
+   // .blog-box__date
+   &__date,
+   &__author,
+   &__theme {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: inherit;
+   }
+   // .blog-box__item-title-link
+   &__item-title-link {
+      cursor: pointer;
+      color: $title;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 38px;
+   }
+   // .blog-box__item-title
+   &__item-title {
+   }
+}
