@@ -37,7 +37,10 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr );
-      grid-gap: 30px 35px;
+      // grid-gap: 30px 35px;
+      grid-row-gap: 30px;
+      grid-column-gap: 35px;
+
    }
    
    // .gallery__item-link
@@ -79,8 +82,11 @@
    // .blog-box__items
    &__items {
       display: grid;
-      grid-gap: 30px;
-      grid-template-columns: 1fr 1fr;
+      // grid-gap: 30px;
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+
+      grid-template-columns: 1fr 1fr; 
    }
    // .blog-box__item
    &__item {

@@ -1,0 +1,190 @@
+.map {
+   margin-top: -53px;
+}
+
+.contact {
+   margin-top: 55px;
+   margin-bottom: 100px;
+		// .contact__title
+		&__title {
+         margin-bottom: 80px;
+         @extend %title-font;
+         color: $title;
+         font-size: 36px;
+         line-height: 60px;
+         position: relative;
+         &::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 1px;
+            background-color: #6D7278;
+            bottom: 0;
+            left: 0;
+         }
+   
+
+		}
+		// .contact__social
+		&__social-block {
+         margin-left: 290px;
+		}
+		// .contact__social
+		&__social {
+         display: flex;
+         margin-bottom: 21px;
+		}
+		// .contact__social-item
+		&__social-item {
+
+		}
+		// .contact__social-link
+		&__social-link {
+
+		}
+		// .contact__social-img
+		&__social-img {
+         width: 28px;
+         height: 18px;
+         margin-right: 36px;
+		}
+		// .contact__discription
+		&__discription {
+         color: #A1A1A1;
+         line-height: 28px;
+         margin-bottom: 14px;
+		}
+		// .contact__adress
+		&__adress { 
+         color: $default;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 28px;
+		}
+		// .contact__adress-tel
+		&__adress-tel {
+         color: $default;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 28px;
+		}
+		// .contact__adress-adr
+		&__adress-adr {
+         margin-bottom: 16px;
+		}
+		// .contact__adress-mail
+		&__adress-mail {
+         display: flex;
+         color: $default;
+         font-weight: 600;
+         font-size: 14px;
+         line-height: 28px;
+         margin-bottom: 24px;
+		}
+		// .contact__adress-mail-img
+		&__adress-mail-img {
+         margin-right: 14px;
+		}
+		// .contact__form
+		&__form {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+		}
+		// .contact__form-name
+		&__form-name {
+         border: 1px solid #DFDFDF;
+         border-radius: 20px;
+         padding: 6px 5px;
+         flex-direction: row;
+         flex: 0 1 49.5%;
+         margin-bottom: 14px;   
+         padding-left: 17px;      
+         &::placeholder {
+            padding: 6px 0;
+            color: #A1A1A1;
+         }
+		}
+		// .contact__form-mail
+		&__form-mail {
+         border: 1px solid #DFDFDF;
+         border-radius: 20px;
+         padding: 6px 5px;
+         margin-bottom: 14px;
+         padding-left: 17px;  
+         flex: 0 1 49.5%;
+         &::placeholder {
+            padding: 6px 0;
+            color: #A1A1A1;
+         }
+
+		}
+		// .contact__form-message
+		&__form-message {
+         border: 1px solid #DFDFDF;
+         border-radius: 20px;
+         padding-top: 14px;
+         padding-bottom: 83px;
+         display: flex;
+         padding-left: 17px;     
+         flex: 0 1 100%;
+         margin-bottom: 20px;
+         &::placeholder {
+            padding: 6px 0;
+            color: #A1A1A1;
+         }
+
+
+		}
+		// .contact__form-btn
+		&__form-btn {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 28px;
+         color: #FFFFF0;
+         border: none;
+         padding: 4px 70px;
+         background: #363838;
+         border-radius: 21px;
+
+		}
+}
+
+.contact-slider {
+   padding-bottom: 102px;
+   // .contact-slider__item
+   &__item {
+      margin-bottom: 20px;
+      position: relative;
+      &:hover {
+         .contact-slider__title {
+            opacity: 1;
+           
+         }
+      }
+
+   }
+   // .contact-slider__img
+   &__img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+   }
+   // .contact-slider__title
+   &__title {
+      transition: all .5s;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(#fff, .6);
+      color: $title;
+      @extend %title-font;
+      padding: 0 8px;
+      text-align: center;
+      opacity: 0;
+   }
+}
