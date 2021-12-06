@@ -1,222 +1,217 @@
 .new-collection {
-   text-align: center;
-   padding: 45px 0 70px;
-   // .new-collection__title
-   &__title {
-      @extend %title-font;
-      color: $title;
-      font-size: 36px;
-      line-height: 51px;
-      padding-bottom: 25px;
-      padding-top: 25px;
-      position: relative;
-      &::after {
-         content: '';
-         position: absolute;
-         width: 250px;
-         height: 1px;
-         bottom: 0;
-         left: 0;
-         right: 0;
-         margin: 0 auto;
-         background: #6D7278;
-      }
-   }
-
-   // .new-collection__text
-   &__text {
-      margin: 24px auto 45px;
-      max-width: 730px;
-   }
-}
-.collection {
-   display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   // grid-gap: 30px;
-   grid-row-gap: 30px;
-   grid-column-gap: 30px;
-
-   // .collection__item
-   &__item {
-     position: relative;
-      &:hover {
-         .collection__info {
-            opacity: 1;
-         }
-      }
-   }
-   // .collection__img
-   &__img {
-      min-height: 350px;
-      object-fit: cover;
-
-   }
-   // .collection__info
-   &__info {
-      top: 0;
+  text-align: center;
+  padding: 45px 0 70px;
+  // .new-collection__title
+  &__title {
+    @extend %title-font;
+    color: $title;
+    font-size: 36px;
+    line-height: 51px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      bottom: 0;
       left: 0;
       right: 0;
-      bottom: 0;
-      position: absolute;
-      background-color: rgba(#fff, .6);
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: all .3s;
-   }
-   // .collection__info-title
-   &__info-title {
-      font-size: 20px;
-      line-height: 25px;
-      color: $title;
-      padding-bottom: 19px;
-      margin-bottom: 19px;
-      position: relative;
-      &::after {
-         content: '';
-         bottom: 0;
-         left: 0;
-         right: 0;
-         position: absolute;
-         background-color: #6D7278;
-         height: 1px;
-         width: 80%;
-         margin: 0 auto;
-      }
+      margin: 0 auto;
+      background: #6d7278;
+    }
+  }
 
-   }
-   // .collection__info-text
-   &__info-text {
-      font-weight: 600;
-      font-size: 14px;
-      color: #707070;
-   }
+  // .new-collection__text
+  &__text {
+    margin: 24px auto 45px;
+    max-width: 730px;
+  }
+}
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  // grid-gap: 30px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  width: 122px;
+  // .collection__item
+  &__item {
+    position: relative;
+    &:hover {
+      .collection__info {
+        opacity: 1;
+      }
+    }
+  }
+  // .collection__img
+  &__img {
+    min-height: 350px;
+    object-fit: cover;
+  }
+  // .collection__info
+  &__info {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(#fff, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  // .collection__info-title
+  &__info-title {
+    font-size: 20px;
+    line-height: 25px;
+    color: $title;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    position: relative;
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      background-color: #6d7278;
+      height: 1px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  // .collection__info-text
+  &__info-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
+  }
 }
 
-
-
 .decor {
-   padding: 172px 0 155px;
-   background: url('../img/decore-bg.jpg') no-repeat;
-   background-size: cover;
-   min-height: 600px;
-   
-   // .decore__title
-   &__title {
-   @extend %title-font;
-   max-width: 730px;
-   color: $title;
-   font-size: 60px;
-   line-height: 80px;
-   padding-bottom: 22px;
-   margin-bottom: 22px;
-   position: relative;
-   &::after {
-      content: '';
+  padding: 172px 0 155px;
+  background: url("../img/decore-bg.jpg") no-repeat;
+  background-size: cover;
+  min-height: 600px;
+
+  // .decore__title
+  &__title {
+    @extend %title-font;
+    max-width: 730px;
+    color: $title;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    &::after {
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
       height: 1px;
       width: 200px;
       background-color: #6d7278;
-   }
-   }
-   // .decore__text
-   &__text {
-      max-width: 540px;
-   }
+    }
+  }
+  // .decore__text
+  &__text {
+    max-width: 540px;
+  }
 }
 
 .works-path {
-   padding: 80px 0 30px;
-   // .works-path__title
-   &__title {
-      @extend %title-font;
-      text-align: center;
-      color: $title;
-      margin-bottom: 40px;
-      font-size: 36px;
-      line-height: 51px;
-   }
-   // .works-path__items
-   &__items {
-   }
-   &__items-box {
-      display: flex;
-      border-bottom: 2px solid rgba($title, .7);
-      position: relative;
-      align-items: flex-end;
-      &::after {
-         content: '';
-         position: absolute;
-         left: 0;
-         bottom: -5px;
-         width: 10px;
-         height: 10px;
-         border-radius: 50%;
-         background-color: $title;
-      }
-   }
-   // .work-path__item
-   &__item {
-      width: 250px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      position: relative;
-      height: 100%;
-   }
+  padding: 80px 0 30px;
+  // .works-path__title
+  &__title {
+    @extend %title-font;
+    text-align: center;
+    color: $title;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 51px;
+  }
+  // .works-path__items
+  &__items {
+  }
+  &__items-box {
+    display: flex;
+    border-bottom: 2px solid rgba($title, 0.7);
+    position: relative;
+    align-items: flex-end;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title;
+    }
+  }
+  // .work-path__item
+  &__item {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
 
-   &__item--production {
-      margin-left: 317px;
-      position: relative;
-      &::after {
-         content: '';
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         height: 20px;
-         width: 2px;
-         background: rgba($title, .7);
-      }
+  &__item--production {
+    margin-left: 317px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, 0.7);
+    }
+  }
+  &__item--consultation {
+  }
 
-   }
-   &__item--consultation {
-   }
+  &__item--measuring {
+    padding-top: 38px;
+    margin-left: 305px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background: rgba($title, 0.7);
+    }
+  }
+  &__item--production,
+  &__item--consultation {
+    padding-bottom: 38px;
+  }
 
-   &__item--measuring {
-      padding-top: 38px;
-      margin-left: 305px;
-      position: relative;
-      &::before {
-         content: '';
-         position: absolute;
-         top: 0;
-         left: 0;
-         height: 20px;
-         width: 2px;
-         background: rgba($title, .7);
-      }
-   }
-   &__item--production, &__item--consultation{
-      padding-bottom: 38px;
-   }
-
-   // .work-path__item-img
-   &__item-img {
-   }
-   // .work-path__item-title
-   &__item-title {
-      @extend %title-font;
-      margin-left: 13px;
-      color: $title;
-
-   }
-   // .work-path__item-text
-   &__item-text {
-      margin-top: 13px;
-   }
+  // .work-path__item-img
+  &__item-img {
+  }
+  // .work-path__item-title
+  &__item-title {
+    @extend %title-font;
+    margin-left: 13px;
+    color: $title;
+  }
+  // .work-path__item-text
+  &__item-text {
+    margin-top: 13px;
+  }
 }
