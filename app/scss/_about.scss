@@ -163,9 +163,8 @@
    &__items {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      // grid-gap: 30px;
-      grid-row-gap: 30px;
-      grid-column-gap: 30px;
+      grid-gap: 30px;
+      
    }
    // .partners__item
    &__item {
